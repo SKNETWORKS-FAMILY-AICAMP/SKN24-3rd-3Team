@@ -125,6 +125,11 @@
   </tbody>
 </table>
 
+- `ChromaDB`는 문서 청크 임베딩을 저장하고 질의와 유사한 문서를 검색하기 위한 VectorDB로 활용
+- 임베딩 검색은 `ko-sroberta-multitask`를 중심으로 구성, `BM25`와 `Cohere-Rerank`를 함께 적용하여 검색 정확도와 상위 문서 정렬 성능을 개선
+- `GPT-4.1-mini`는 검색된 문서를 바탕으로 사용자에게 이해하기 쉬운 형태의 답변을 생성하는 데 사용
+- `LangChain`, `LangGraph`는 검색-재정렬-응답 생성 흐름을 구성하고 연결하는 데 활용
+
 ---
 
 ## 4. 시스템 아키텍쳐 (System Architecture)
