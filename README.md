@@ -24,7 +24,7 @@
 ## 2. 프로젝트 개요
 
 ### 2-1 프로젝트 명
-**뉴런 건설**
+**현장이랑 안전이랑**
 
 ### 2-2 프로젝트 소개
 ’뉴런 건설’은 **한국산업안전공단**에서 제·개정한 기술지원규정을 바탕으로 건설 안전 분야에서 활용할 수 있는 안전 지침을 안내하는 챗봇입니다.  
@@ -46,7 +46,7 @@
 
 #### ⚠️ 안전관리 선임 예외의 역설
 <p align="center">
-  <img src="./assets/images/매일경제.PNG" width="600" alt="매일경제 기사 캡처">
+  <img src="./assets/images/매일경제.png" width="600" alt="매일경제 기사 캡처">
 </p>
 
 현행법상 **50억 미만 건설현장**은 전담 안전관리자 선임 의무가 면제됩니다. 이로 인해 법적 책임은 대형 현장과 동일하게 지면서도, 정작 현장에서 법령을 해석하고 이행을 지원할 전문 인력이 배치되지 않는 **구조적 사각지대**가 발생하고 있습니다.
@@ -60,34 +60,77 @@
 
 ### 2-4 프로젝트 목표
 
-* **기술 지침 접근성 확보:** KOSHA Guide는 2,000여 종에 달하며, 전체 분량은 약 6만 페이지를 넘습니다. 전담 인력이 없는 소규모 현장에서는 숙지와 적용이 사실상 어려운 현실입니다. 이에 안전 지침을 챗봇으로 제공하여 접근성 확보하고 실효성을 높이고자 합니다.
+* **기술 지침 접근성 확보:** KOSHA Guide는 2,000여 종에 달하며, 전체 분량은 약 6만 페이지를 넘습니다. 전담 인력이 없는 소규모 현장에서는 숙지와 적용이 사실상 어려운 현실입니다. 이에 건설 현장 안전 관련 핵심 규정 77건(약 1,800페이지)을 선별하여 챗봇으로 제공함으로써 접근성을 확보하고 실효성을 높이고자 합니다.
 * **건설 현장 안전 제고:** 최근 특별 감독 결과에 따르면, 온습도계 비치 및 기록 관리와 같은 기초 수칙에서만 600건 이상의 위반이 적발되었습니다. 또한 사망 사고 60%는 50억 미만에서 일어나는 만큼 건설 현장 안전을 제고하는 데에 기여하고자 합니다.
-* **기술 적용:** 전문 지식이 담긴 대량의 문서를 활용하여 **RAG(Retrieval-Augmented Generation)** 기술을 적용해보고 LLM 챗봇으로 구현해 보고자 합니다.
 
 ---
 
 ## 3. 기술 스택 & 사용 모델 (Tech Stack & Models)
 
-### 🛠️ Environment & Frameworks
-* **Language:** Python
-* **Framework:** LangGraph
-* **Database:** Pinecone (Vector DB)
-
-### 🤖 AI Models
-* **LLM:** OpenAI `gpt-4o-mini`
-* **Embedding:** OpenAI `text-embedding-3-small`
-
-### 📚 Libraries
-* **Data Parsing:** `pdfplumber` (KOSHA Guide PDF 정밀 파싱)
-* **Validation:** `pydantic` (데이터 구조화 및 검증)
-* **NLP:** `kiwi` (한국어 형태소 분석 및 텍스트 처리)
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center;">분류</th>
+      <th style="text-align:center;">기술</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">협업 및 형상 관리</td>
+      <td>
+        <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
+        <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
+      </td>
+    </tr>
+    <tr>
+      <td align="center">개발 환경 & 언어</td>
+      <td>
+        <img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
+        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+      </td>
+    </tr>
+    <tr>
+      <td align="center">LLM</td>
+      <td>
+        <img src="https://img.shields.io/badge/GPT--4.1--mini-74aa9c?style=for-the-badge&logo=openai&logoColor=white">
+      </td>
+    </tr>
+    <tr>
+      <td align="center">임베딩 & 검색</td>
+      <td>
+        <img src="https://img.shields.io/badge/ko--sroberta--multitask-137a7f?style=for-the-badge&logo=huggingface&logoColor=white">
+        <img src="https://img.shields.io/badge/BM25-0077CC?style=for-the-badge">
+        <img src="https://img.shields.io/badge/Cohere--Rerank-FF6B35?style=for-the-badge">
+      </td>
+    </tr>
+    <tr>
+      <td align="center">VectorDB</td>
+      <td>
+        <img src="https://img.shields.io/badge/ChromaDB-CC1412?style=for-the-badge&logo=chroma&logoColor=white">
+      </td>
+    </tr>
+    <tr>
+      <td align="center">프레임워크</td>
+      <td>
+        <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white">
+        <img src="https://img.shields.io/badge/LangGraph-205C5C?style=for-the-badge&logo=langchain&logoColor=white">
+      </td>
+    </tr>
+    <tr>
+      <td align="center">외부 API</td>
+      <td>
+        <img src="https://img.shields.io/badge/OpenWeatherMap-FF6600?style=for-the-badge&logo=openweathermap&logoColor=white">
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 ## 4. 시스템 아키텍쳐 (System Architecture)
 
 <p align="center">
-  <img src="./docs/images/architecture.png" width="600" alt="시스템 아키텍쳐">
+  <img src="./assets/images/architecture.png" width="600" alt="시스템 아키텍쳐">
 </p>
 
 ## 7. 수집한 데이터 및 전처리 요약
