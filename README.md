@@ -4,20 +4,22 @@
 
 <div align="center">
 
-### **현장이랑 안전이랑**
+<div style="display: flex; justify-content:center;">
+  <img src="./assets/images/안전이.png" style="width: 20%;" alt="안전이">
+  <img src="./assets/images/건설이11.png" style="width: 20%;" alt="건설이">
+</div>
+
+# **현장이랑 안전이랑**
  
 | 김규호 | 박수영 | 박세현 | 이동민 | 최하진 |
 | :---: | :---: | :---: | :---: | :---: |
-| <img width="228" height="291" alt="image" src="https://github.com/assets/파일이름" /> | <img width="227" height="283" alt="image" src="https://github.com/assets/파일이름" /> | <img width="222" height="263" alt="image" src="https://github.com/assets/파일이름" /> | <img width="214" height="277" alt="image" src="https://github.com/assets/파일이름" /> | <img width="219" height="261" alt="image" src="https://github.com/assets/파일이름" /> |
-| [![GitHub](https://img.shields.io/badge/GitHub-kyu5KIm-181717?style=flat&logo=github&logoColor=white)](https://github.com/kyu5KIm) | [![GitHub](https://img.shields.io/badge/GitHub-suyoung6279-181717?style=flat&logo=github&logoColor=white)](https://github.com/suyoung6279) | [![GitHub](https://img.shields.io/badge/GitHub-colaa222-181717?style=flat&logo=github&logoColor=white)](https://github.com/이름) | [![GitHub](https://img.shields.io/badge/GitHub-HyojungJ-181717?style=flat&logo=github&logoColor=white)](https://github.com/이름) | [![GitHub](https://img.shields.io/badge/GitHub-doyeon999-181717?style=flat&logo=github&logoColor=white)](https://github.com/이름) |
+| <img width="228" height="291" alt="image" src="./assets/images/안전보이즈1.PNG" /> | <img width="228" height="291" alt="image" src="./assets/images/안전보이즈2.PNG" /> | <img width="228" height="291" alt="image" src="./assets/images/안전보이즈3.PNG" /> | <img width="228" height="291" alt="image" src="./assets/images/안전보이즈4.PNG" /> | <img width="228" height="291" alt="image" src="./assets/images/안전보이즈5.PNG" /> |
+| [![GitHub](https://img.shields.io/badge/GitHub-kyu5KIm-181717?style=flat&logo=github&logoColor=white)](https://github.com/kyu5KIm) | [![GitHub](https://img.shields.io/badge/GitHub-suyoung6279-181717?style=flat&logo=github&logoColor=white)](https://github.com/suyoung6279) | [![GitHub](https://img.shields.io/badge/GitHub-parksay-181717?style=flat&logo=github&logoColor=white)](https://github.com/parksay) | [![GitHub](https://img.shields.io/badge/GitHub-LeeDongMin0115-181717?style=flat&logo=github&logoColor=white)](https://github.com/LeeDongMin0115) | [![GitHub](https://img.shields.io/badge/GitHub-hun6684-181717?style=flat&logo=github&logoColor=white)](https://github.com/hun6684) |
 
 **프로젝트 기간**: 2026.04.08 ~ 2024.04.09 (2일)
 
 </div>
 
----
-
-# 🏗️ 뉴런 건설 (Neuron Construction)
 
 ## 2. 프로젝트 개요
 
@@ -120,7 +122,7 @@ RAG 기반 챗봇의 답변 품질은 **'질문에 맞는 정확한 문서를 �
 
 > **초기 분석 결과:** [이미지 2]의 지표를 분석한 결과, 단순히 유사도(`Dense`)만 사용하는 것보다 키워드 기반 검색(`BM25`)을 혼합하거나, 최종적으로 `ReRank` 과정을 거쳤을 때 검색 점수가 유의미하게 상승하는 것을 확인했습니다. 특히 `ReRank (Score)`가 대부분 0.9 이상으로 높게 나타나, ReRanker의 도입이 전문 용어가 많은 건설 안전 문서 검색에 필수적임을 정량적으로 입증했습니다.
 
-### 10-3) 파라미터 최적화 실험 (Grid Search) 및 모델 비교
+### 10-3 파라미터 최적화 실험 (Grid Search) 및 모델 비교
 
 검색 범위(K)와 혼합 비중(`RRF Top N`)에 변화를 주며, `v3.0` 시리즈의 두 모델(Fast vs Multilingual)을 대상으로 성능을 극대화할 수 있는 임계점을 도출했습니다.
 
