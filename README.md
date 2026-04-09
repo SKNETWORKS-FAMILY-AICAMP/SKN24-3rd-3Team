@@ -33,6 +33,9 @@
 
 #### 🔴 중대재해처벌법 적용의 전면 확대
 <p align="center">
+<img src="./assets/images/연합뉴스.jpg" width="600" alt="연합뉴스 기사 캡처">
+</p>
+
 
 2024년 1월부터 **5인 이상 50인 미만**의 모든 사업장에 중대재해처벌법이 적용되면서, 소규모 건설공사 현장 역시 사고 발생 시 경영책임자가 구속되거나 막대한 벌금을 부과받는 등 경영권 상실의 위협에 직면해 있습니다. 
 
@@ -44,6 +47,9 @@
 
 #### ⚠️ 안전관리자 선임의 사각지대
 <p align="center">
+<img src="./assets/images/매일경제.png" width="600" alt="매일경제 기사 캡처">
+</p>
+
 
 현행법상 **50억 미만 건설현장**은 전담 안전관리자 선임 의무가 면제됩니다. 이로 인해 법적 책임은 대형 현장과 동일하게 지면서도, 정작 현장에서 법령을 해석하고 이행을 지원할 전문 인력이 배치되지 않는 **구조적 사각지대**가 발생하고 있습니다.
 
@@ -169,6 +175,9 @@
 # 4. 시스템 아키텍쳐 (System Architecture)
 
 <p align="center">
+ <img src="./docs/images/architecture.png" width="600" alt="시스템 아키텍쳐">
+</p>
+
 
 ---
 
@@ -341,6 +350,9 @@ Q10. 노쯔라 붙일 때 멘츠라 잘 해야 히즈미 안 생겨?
 <p align="center">
   <img src="./assets/images/1.png" width="600" alt="검색 방식별 성능 지표 비교 표">
   <br>
+<em>[이미지 2] 각 질문별 검색 방식의 초기 성능 지표(Baseline) 분석</em>
+</p>
+
 
 > **초기 분석 결과:** 지표를 분석한 결과, 단일 모델(Dense/BM25) 대비 혼합 검색(RRF) 및 ReRank 적용 시 검색 품질이 향상됨을 확인했습니다. 특히 ReRank 점수가 평균 0.9 이상으로 높게 나타나, 건설 전문 용어가 포함된 복잡한 질의에 대해 ReRanker를 도입하고자 하였습니다.
 
@@ -349,6 +361,9 @@ Q10. 노쯔라 붙일 때 멘츠라 잘 해야 히즈미 안 생겨?
 <p align="center">
   <img src="./assets/images/평가지표.png" width="600" alt="검색 알고리즘별 성능 지표 비교">
   <br>
+<em>[이미지 3] 검색 방식별 주요성능 지표(P@5, R@5, MRR, MAP) 비교</em>
+</p>
+
 
 실험 결과, **ReRank 방식**이 높은 성능 향상을 보여주었습니다. 특히 정답 문서가 상위에 위치하는지를 평가하는 **MRR(Mean Reciprocal Rank)**과 순위 정확도를 나타내는 **MAP(Mean Average Precision)** 지표에서 눈에 띄는 결과를 기록했습니다.
 
@@ -425,6 +440,8 @@ Q10. 노쯔라 붙일 때 멘츠라 잘 해야 히즈미 안 생겨?
 <p align="center">
   <img src="./assets/images/EEVE.png" width="400" alt="EEVE-Korean-Instruct-10.8B">
   <br>
+<em>[이미지 6] EEVE-Korean-Instruct-10.8B 모델 결과</em>
+</p>
 
 <table align="center">
   <thead>
@@ -464,10 +481,13 @@ Q10. 노쯔라 붙일 때 멘츠라 잘 해야 히즈미 안 생겨?
 <p align="left">
   <img src="./assets/images/EEVE1.png" width="600" alt="EEVE-Korean-Instruct-10.8B">
   <br>
+ <em>EEVE-Korean-Instruct-10.8B 모델 추론 결과</em>
+</p>
 
 <p align="center">
   <img src="./assets/images/파인튜닝val.png" width="500" alt="Validation 추이">
-
+<img src="./assets/images/파인튜닝테스트.png" width="500" alt="최종 테스트 결과">
+</p>
 **결론:** 일부 과적합 양상을 보이지만, 문장 변환 테스트를 성공적으로 수행한 **EEVE-Korean-Instruct-10.8B 모델을 본 프로젝트의 최종 파인튜닝 베이스 모델로 채택**하여, 현장 작업자가 은어를 사용하여 질문하여도 정확한 답변을 낼 수 있도록 구현하였습니다.
 
 
