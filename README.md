@@ -31,7 +31,7 @@
 
 ## 2-3 프로젝트 필요성
 
-#### 중대재해처벌법 적용의 전면 확대
+### 중대재해처벌법 적용의 전면 확대
 <p align="center">
 <img src="./assets/images/연합뉴스.jpg" width="600" alt="연합뉴스 기사 캡처">
 </p>
@@ -45,7 +45,7 @@
 
 ---
 
-#### 소규모 현장(50억 미만)의 구조적 안전 사각지대
+### 소규모 현장(50억 미만)의 구조적 안전 사각지대
 
 <p align="center">
   <img src="./assets/images/매일경제.png" width="600" alt="매일경제 기사 캡처">
@@ -58,7 +58,7 @@
 
 ---
 
-#### 서비스 타겟 페르소나 및 기획 배경
+### 서비스 타겟 페르소나 및 기획 배경
 
 <p align="center">
   <img width="2070" height="1154" alt="image" src="https://github.com/user-attachments/assets/0f5850f8-5ffe-41e2-a2e4-1febc6ce4e54" />
