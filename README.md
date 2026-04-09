@@ -306,6 +306,11 @@
 #### 2) Dense Retrieval 성능 향상을 위한 임베딩 모델 비교
 데이터셋 질의를 다시 입력하여 Dense Retrieval 단계에서의 검색 유사도 점수를 비교하였습니다. 비교 대상 모델은 `ko-sroberta-multitask(이하 ko-sroberta)`, `nlpai-lab/KURE-v1`, `dragonkue/BGE-m3-ko`, `BAAI/bge-m3` 총 4종이며, 대표 질의 5건에 대한 결과를 정리하였습니다.
 
+- ko-sroberta-multitask : 한국어 문장 임베딩에 널리 활용되는 대표 모델로, 한국어 안전 문서 검색 적합성을 검토하기 위해 선정
+- nlpai-lab/KURE-v1 : 한국어 검색 성능을 비교하기 위해 선정
+- dragonkue/BGE-m3-ko : 한국어 최적화 BGE 계열 모델의 검색 성능을 확인하기 위해 선정
+- BAAI/bge-m3 : 다국어 기반 범용 임베딩 모델로, 한국어 환경에서의 활용 가능성을 비교하기 위해 선정
+
 **[표 1] 데이터셋 대표 질의 5건에 대한 임베딩 모델별 유사도 점수 비교**
 | 질문 요약 | ko-sroberta | KURE-v1 | BGE-m3-ko | BAAI/bge-m3 | 최고 모델 |
 |---|---:|---:|---:|---:|---|
