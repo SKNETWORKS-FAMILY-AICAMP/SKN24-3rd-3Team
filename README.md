@@ -282,6 +282,9 @@
 | Q9 | O | O | O | O | - |
 | Q10 | O | O | O | O | - |
 
+### 테스트 시연 결과
+<img width="739" height="455" alt="image" src="https://github.com/user-attachments/assets/66744cf2-1469-4836-ab6b-6c1b310488fb" />
+
 
 # 10. 진행 과정 중 프로그램 개선 노력 (Program Optimization)
 
