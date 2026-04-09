@@ -68,12 +68,12 @@
 <table align="center">
   <tr>
     <td align="center">
-      <img src="./assets/images/안전관리자.png" width="800">
+      <img src="./assets/images/안전관리자.png" width="800" height="400">
       <br>
       <em>산업안전보건법 제17조</em>
     </td>
     <td align="center">
-      <img src="./assets/images/안전보건교육 시간.png" width="400">
+      <img src="./assets/images/안전보건교육 시간.png" width="400" height="400">
       <br>
       <em>산업안전보건법 시행규칙 제26조(교육시간 및 교육내용 등)</em>
     </td>
@@ -195,14 +195,21 @@
 # 7. 수집한 데이터 및 전처리 요약
 
 ## 7-1 RAG용 문서 데이터 수집
-<div style="display:flex; justify-content:center">
-  <img src="./docs/images/s1.png" width="700" alt="구축된 10가지 테스트 질문 세트">
-  <br>
-  <em>원본 pdf 예시 1</em>
-  <img src="./docs/images/s2.png" width="700" alt="구축된 10가지 테스트 질문 세트">
-  <br>
-  <em>원본 pdf 예시 2</em>
-</div>
+
+<table align="center">
+  <tr>
+    <td align="center">
+        <img src="./docs/images/s1.png" width="700" alt="구축된 10가지 테스트 질문 세트">
+      <br>
+      <em>원본 pdf 예시 1</em>
+    </td>
+    <td align="center">
+      <img src="./docs/images/s2.png" width="700" alt="구축된 10가지 테스트 질문 세트">
+      <br>
+      <em>원본 pdf 예시 2</em>
+    </td>
+  </tr>
+</table>
 
 
 #### KOSHA 안전규정집
@@ -239,15 +246,25 @@
 ### 테스트 문항
 
 Q1. 현재 서울 날씨를 고려할 때 다이루 붙일 때 주의할 점 있어?
+<br>
 Q2. 현재 서울 강수량을 고려할 때 아마모리 방지하는 방법 있을까?
+<br>
 Q3. 지금 서울 날씨에 후까시 방지하려면 어떻게 해야 돼?
+<br>
 Q4. 기소 공구리 타설할 때 현재 서울 날씨 영향 어떻게 고려해요?
+<br>
 Q5. 하도메 하고 나서 히비 생기면 어떻게 처리해?
+<br>
 Q6. 야마내기랑 시바리 같이 할 때 주의할 점 있어?
+<br>
 Q7. 메지 깔 때 기리꼬미 쓰는 거 맞아?
+<br>
 Q8. 단까로 리꾸사꾸 옮길 때 타레가 생기면 어떻게 해요?
+<br>
 Q9. 멘도리 작업할 때 혼시메랑 메꾸라도 같이 해요?
+<br>
 Q10. 노쯔라 붙일 때 멘츠라 잘 해야 히즈미 안 생겨?
+<br>
 
 ### 테스트 항목
 
@@ -395,7 +412,7 @@ Q10. 노쯔라 붙일 때 멘츠라 잘 해야 히즈미 안 생겨?
       <em>[이미지 4] beomi/Llama-3-Open-Ko-8B 모델</em>
     </td>
     <td align="center">
-      <img src="./assets/images/규호 모델1.png" width="400" alt="saltlux/Ko-Llama3-Luxia-8B">
+      <img src="./assets/images/규호 모델1.png" width="800" alt="saltlux/Ko-Llama3-Luxia-8B">
       <br>
       <em>[이미지 5] saltlux/Ko-Llama3-Luxia-8B 모델 결과</em>
     </td>
