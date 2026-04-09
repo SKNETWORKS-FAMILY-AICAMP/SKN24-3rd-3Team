@@ -4,7 +4,6 @@ from pathlib import Path
 import chromadb
 from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
 
-# 프로젝트 루트 기준 경로
 BASE_DIR = Path(".")
 OUTPUT_DIR = BASE_DIR / "output_chunks"
 CHROMA_DIR = BASE_DIR / "chroma_db"
@@ -13,7 +12,6 @@ EMBEDDING_MODEL = "BAAI/bge-m3"
 
 
 def load_child_chunks(output_dir: Path) -> list[dict]:
-    """모든 child chunk JSON을 불러온다."""
     all_children: list[dict] = []
     for json_file in sorted(output_dir.glob("*_child_chunks.json")):
         data = json.loads(json_file.read_text(encoding="utf-8"))
@@ -22,7 +20,6 @@ def load_child_chunks(output_dir: Path) -> list[dict]:
 
 
 def load_parent_chunks(output_dir: Path) -> dict[str, dict]:
-    """parent chunk를 chunk_id 기준으로 매핑한다."""
     parent_map: dict[str, dict] = {}
     for json_file in sorted(output_dir.glob("*_parent_chunks.json")):
         data = json.loads(json_file.read_text(encoding="utf-8"))
@@ -38,7 +35,6 @@ def build_collection(
     embedding_model: str = EMBEDDING_MODEL,
     batch_size: int = 1000,
 ) -> tuple[chromadb.Collection, dict[str, dict]]:
-    """청킹된 문서를 임베딩하여 ChromaDB에 저장한다."""
     embedding_fn = SentenceTransformerEmbeddingFunction(model_name=embedding_model)
     chroma_client = chromadb.PersistentClient(path=str(chroma_dir))
 
