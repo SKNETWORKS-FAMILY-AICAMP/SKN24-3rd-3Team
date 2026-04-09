@@ -80,8 +80,11 @@
   </tr>
 </table>
 
-<p align="center">
 
+
+<p align="center">
+  <img src="./assets/images/대한산업안전협회.png" width="600">
+</p>
 
 > **출처:** [대한산업안전협회] [건설재해예방기술지도](https://www.safety.or.kr/safety/main/contents.do?menuNo=200023)
 
