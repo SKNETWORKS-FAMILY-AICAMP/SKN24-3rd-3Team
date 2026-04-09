@@ -93,7 +93,7 @@
   <em>[증빙 3] 건설재해예방기술지도 (15일 1회 방문 주기)</em>
 </p>
 
-> **출처:** > * [매일경제] [사망사고 60%는 공사비 50억 미만 영세 공사현장](https://www.mk.co.kr/news/realestate/11439173)
+> **출처:** > [매일경제] [사망사고 60%는 공사비 50억 미만 영세 공사현장](https://www.mk.co.kr/news/realestate/11439173)
 > * [대한산업안전협회] [건설재해예방기술지도 안내](https://www.safety.or.kr/safety/main/contents.do?menuNo=200023)
 > * 산업안전보건법 시행규칙 [별표 4] (안전보건교육 시간)
 
