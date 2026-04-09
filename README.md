@@ -132,7 +132,7 @@
 # 4. 시스템 아키텍쳐 (System Architecture)
 
 <p align="center">
-  <img src="./assets/images/architecture.png" width="600" alt="시스템 아키텍쳐">
+  <img src="./docs/images/architecture.png" width="600" alt="시스템 아키텍쳐">
 </p>
 
 ---
