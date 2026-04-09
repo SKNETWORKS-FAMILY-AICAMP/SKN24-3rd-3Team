@@ -140,6 +140,12 @@
 
 ---
 
+## 5. WBS
+
+<img width="855" height="471" alt="image" src="https://github.com/user-attachments/assets/a5e3e491-4e1a-49c6-a0b3-639216fecd02" />
+
+----
+
 ## 6. 요구사항 명세서
 
 | 분류 | 요구사항명 | 내용 | 상태 |
